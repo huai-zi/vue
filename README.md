@@ -26,7 +26,7 @@ $ npm install
 ###在使用前先使用 npm install jquery  --save 安装jQ文件
 - 创建一个jquery.js文件
 
-- ```
+```
 import $ from 'jQuery';
 console.log($);
 window.$ = $;
@@ -34,6 +34,7 @@ window.jQuery = $;
 export default $
 ```
 - 在vue组件做如下引用
+
 ```
 import $ from '创建上面js文件的路径';
 //调用初始化,直接使用便可
