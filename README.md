@@ -43,4 +43,4 @@ $(function(){
 });
 ```
 
-
+[查看文档](https://huai-zi.github.io/vue/)
