@@ -43,4 +43,17 @@ $(function(){
 });
 ```
 
+###加载外部的js文件
+
+```
+在webpack.config.js文件中，配置上
+entry: {
+		home: ['./src/main.js'],//指定打包的入口文件
+		common: ['./statics/js/mui.min.js']/*定义公用的文件*/
+	},这段是导包的文件，将外部的js文件进行后期的打包进入，但是在使用的过程中，还需要在使用的界面加载上此条数据
+ 在使用的vue页面，加载上mui.js文件，
+ 	var mui = require('../statics/js/mui.min.js');
+  在method方法中就可以进行调用了
+```
+
 [查看文档](https://huai-zi.github.io/vue/)
